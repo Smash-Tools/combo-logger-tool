@@ -1,0 +1,10 @@
+<h1 class="title">Select A Character</h1>
+
+<ul>
+  <li ng-repeat: character in characters>
+    <a href="/#/character/:name">
+      <img ng-src="{{character.img}}" alt="{{character.name}}">
+      <h4>{{character.name}}</h4>
+    </a>
+  </li>
+</ul>

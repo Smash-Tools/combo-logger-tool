@@ -1,0 +1,53 @@
+<h1 class="title">Add A New Combo</h1>
+
+<form class="add-combo-form" ng-submit="submitCombo(combo)">
+  <div class="executing-container">
+    Executing Character:
+    <label class="executeing-label" ng-repeat= "character in characters track by $index">
+      {{character.name}}
+      <input type="radio" name="executor" value="{{character.val}}">
+    </label>
+  </div>
+  <div class="susceptible-container">
+    Susceptible Characters:
+    <label class="susceptible-label" ng-repeat= "character in characters track by $index">
+      {{character.name}}
+      <input type="checkbox" name="{{character.val}}" value="{{character.val}}">
+    </label>
+  </div>
+  <div class="stages-container">
+    Valid Stages:
+    <label class="stage-label" ng-repeat= "stage in stages track by $index">
+      {{stage.name}}
+      <input type="checkbox" name="{{stage.val}}" value="{{stage.val}}">
+    </label>
+  </div>
+  <div class="execution-pattern-container">
+    
+  </div>
+</form>
+
+
+<!-- var Combo = connection.define("combos", {
+  description: {
+    type: Sequelize.TEXT,
+  },
+  execution_pattern: {
+    type: Sequelize.ARRAY(Sequelize.STRING)
+  },
+  start_percent_range: {
+    type: Sequelize.STRING
+  },
+  valid_stages: {
+    type: Sequelize.ARRAY(Sequelize.STRING)
+  },
+  example: {
+    type: Sequelize.STRING
+  },
+  executor: {
+    type: Sequelize.STRING
+  },
+  susceptible: {
+    type: Sequelize.ARRAY(Sequelize.STRING)
+  }
+}); -->

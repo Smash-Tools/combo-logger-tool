@@ -1,0 +1,17 @@
+form {
+  font-size: 1.3em;
+  display: flex;
+  div {
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2){
+      margin-left: 5%;
+    }
+    &:nth-child(3){
+      margin-left: 5%;
+    }
+  }
+}
+label {
+ font-size: .9em;
+}
